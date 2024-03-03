@@ -44,11 +44,14 @@ console.log(typeof anotherId);
 
 let address = "London";
 
-let newAddress = address;
-newAddress = "Madrid";
+let newAddress = address;// a copy of address variable is given in stack memory
 
-console.log(address);
-console.log(newAddress);
+newAddress = "Madrid"; // therefore the original variable remains unchanged
+
+console.log(address);   // The value is not changed because the copy of the variable is given in the stack
+
+console.log(newAddress);// The value is not changed because the copy of the variable is given in the stack
+ 
 
 let userOne = {
     email: "user1@google.com",
@@ -59,5 +62,7 @@ let userTwo = userOne;
 
 userTwo.email = "user2@gmail.com"
 
-console.log(userOne.email);
-console.log(userTwo.email);
+console.log(userOne.email);// The Output is user2@gmail.com because the reference of the datatype is given in heap memory and therefore the original property of the object gets changed
+
+console.log(userTwo.email);// The Output is user2@gmail.com because the reference of the datatype is given in heap memory and therefore the original property of the object gets changed
+
