@@ -34,3 +34,11 @@ console.log(typeof undefined); // Outputs: undefined
 
 // Output the data type of 'null' to the console.
 console.log(typeof null); // Outputs: object
+
+/* +++++ Additional notes +++++++
+    =>Strict mode helps catch common coding mistakes and "unsafe" actions, promoting cleaner and safer code.
+    
+    =>The typeof operator is used to determine the type of a variable or expression in JavaScript.
+    
+    =>Note that the typeof null returning "object" is considered a quirk or historical accident in JavaScript and is not an accurate reflection of null being an object.
+*/
