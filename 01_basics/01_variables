@@ -1,22 +1,29 @@
-const accountId = 144553
-let accountEmail = "john@google.com"
-var accountPassword = "12345"
-accountCity = "London"
+// Declare a constant variable called 'accountId' and assign it the value 144553
+const accountId = 144553;
+
+// Declare a variable called 'accountEmail' and assign it the string value "john@google.com"
+let accountEmail = "john@google.com";
+
+// Declare a variable called 'accountPassword' and assign it the string value "12345"
+var accountPassword = "12345"; // Using 'var' here is not preferred due to scope issues.
+
+// Assign the string value "London" to a variable called 'accountCity'
+accountCity = "London"; // 'accountCity' becomes a global variable because it wasn't declared with a keyword 'const', 'let', or 'var'.
+
+// Declare a variable called 'accountState' without assigning any value to it yet
 let accountState;
 
-// accountId = 2 // not allowed
+// Reassign the value of 'accountEmail' to "hc@hc.com"
+accountEmail = "hc@hc.com";
 
+// Reassign the value of 'accountPassword' to "21212121"
+accountPassword = "21212121";
 
-accountEmail = "hc@hc.com"
-accountPassword = "21212121"
-accountCity = "Madrid"
+// Reassign the value of 'accountCity' to "Madrid"
+accountCity = "Madrid";
 
+// Output the value of 'accountId' to the console
 console.log(accountId);
 
-/*
-Prefer not to use var
-because of issue in block scope and functional scope
-*/
-
-
-console.table([accountId, accountEmail, accountPassword, accountCity, accountState])
+// Output a table to the console displaying the values of all variables
+console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
