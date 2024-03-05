@@ -27,3 +27,18 @@ console.log(accountId);
 
 // Output a table to the console displaying the values of all variables
 console.table([accountId, accountEmail, accountPassword, accountCity, accountState]);
+
+
+/* 
+
+Additional notes:
+
+const is used for values that should not be reassigned.
+
+let is used for variables that might change their value later in the code.
+
+var is an older way of declaring variables and has scoping issues, so it's better to avoid it in modern JavaScript.
+
+Global variables can be accessed from anywhere in the code, but it's generally considered better practice to limit their use to prevent unintended side effects.
+
+*/
