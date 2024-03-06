@@ -1,4 +1,4 @@
-
+// Define a function named sayMyName with no parameters, which logs individual letters of "HITESH"
 function sayMyName(){
     console.log("H");
     console.log("I");
@@ -8,63 +8,74 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
-
-// function addTwoNumbers(number1, number2){
-
-//     console.log(number1 + number2);
-// }
-
+// Define a function named addTwoNumbers with two parameters, number1 and number2, which adds the two numbers and returns the result
 function addTwoNumbers(number1, number2){
-
-    // let result = number1 + number2
-    // return result
-    return number1 + number2
+    return number1 + number2; // Return the sum of number1 and number2
 }
 
-const result = addTwoNumbers(3, 5)
+// Call the addTwoNumbers function with arguments 3 and 5, store the result in the variable result
+const result = addTwoNumbers(3, 5);
 
-// console.log("Result: ", result);
-
-
+// Define a function named loginUserMessage with a default parameter username set to "sam", which returns a message indicating the username logged in
 function loginUserMessage(username = "sam"){
-    if(!username){
-        console.log("PLease enter a username");
-        return
+    if(!username){ // Check if username is empty
+        console.log("Please enter a username"); // Log a message if username is empty
+        return; // Exit the function
     }
-    return `${username} just logged in`
+    return `${username} just logged in`; // Return a message indicating the username logged in
 }
 
-// console.log(loginUserMessage("hitesh"))
-// console.log(loginUserMessage("hitesh"))
-
-
+// Define a function named calculateCartPrice with rest parameter num1, which returns the rest parameter
 function calculateCartPrice(val1, val2, ...num1){
-    return num1
+    return num1; // Return the rest parameter
 }
 
-// console.log(calculateCartPrice(200, 400, 500, 2000))
-
+// Define an object named user with properties username and prices
 const user = {
     username: "hitesh",
     prices: 199
 }
 
+// Define a function named handleObject with parameter anyobject, which logs the username and price of the object passed as an argument
 function handleObject(anyobject){
     console.log(`Username is ${anyobject.username} and price is ${anyobject.price}`);
 }
 
-// handleObject(user)
+// Call the handleObject function with the user object as an argument
 handleObject({
     username: "sam",
     price: 399
-})
+});
 
-const myNewArray = [200, 400, 100, 600]
+// Define an array named myNewArray
+const myNewArray = [200, 400, 100, 600];
 
+// Define a function named returnSecondValue with parameter getArray, which returns the second element of the array passed as an argument
 function returnSecondValue(getArray){
-    return getArray[1]
+    return getArray[1]; // Return the second element of the array
 }
 
-// console.log(returnSecondValue(myNewArray));
+// Call the returnSecondValue function with the array [200, 400, 500, 1000] as an argument
 console.log(returnSecondValue([200, 400, 500, 1000]));
+
+/*
+
+Additional Notes:
+
+Functions in JavaScript are blocks of code that can be reused and executed when called.
+
+Parameters are variables listed as part of the function definition.
+
+Arguments are values passed to the function when it is called.
+
+Default parameters provide a default value if no argument is passed.
+
+Rest parameters allow functions to accept an indefinite number of arguments as an array.
+
+Object properties can be accessed within functions using dot notation or bracket notation.
+
+Functions can return values using the return keyword, and if no return statement is present, the function returns undefined.
+
+Functions can also have side effects, such as logging messages to the console or modifying objects.
+
+*/
