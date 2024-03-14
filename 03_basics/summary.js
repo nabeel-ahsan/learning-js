@@ -2,7 +2,7 @@
 
 // Function Declaration
 function sayHello() {
-    console.log("Hello!");
+    console.log("Hello!");  
 }
 
 // Function Expression
