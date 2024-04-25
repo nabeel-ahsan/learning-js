@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: #212121; color: #ffffff">
+    <div class="parent">
+      <!-- Comment -->
+      <div class="day">Monday</div>
+      <div class="day">Tuesday</div>
+      <div class="day">Wednesday</div>
+      <div class="day">Thursday</div>
+    </div>
+  </body>
+  <script>
+    // Selecting the parent element with the class name "parent".
+    const parent = document.querySelector(".parent");
+
+    // Logging the parent element to the console.
+    // console.log(parent);
+
+    // Logging the child elements of the parent element.
+    // console.log(parent.children);
+
+    // Logging the second child element of the parent.
+    // console.log(parent.children[1]);
+
+    // Logging the inner HTML content of the second child element.
+    // console.log(parent.children[1].innerHTML);
+
+    // Looping through each child element of the parent and logging their inner HTML content.
+    for (let i = 0; i < parent.children.length; i++) {
+      console.log(parent.children[i].innerHTML);
+    }
+
+    // Changing the text color of the second child element to orange.
+    parent.children[1].style.color = "orange";
+
+    // Logging the first child element of the parent.
+    // console.log(parent.firstElementChild);
+
+    // Logging the last child element of the parent.
+    // console.log(parent.lastElementChild);
+
+    // Selecting the first element with the class name "day".
+    const dayOne = document.querySelector('.day');
+
+    // Logging the selected element.
+    // console.log(dayOne);
+
+    // Logging the parent element of the selected element.
+    // console.log(dayOne.parentElement);
+
+    // Logging the next sibling element of the selected element.
+    // console.log(dayOne.nextElementSibling);
+
+    // Logging all child nodes of the parent element.
+    console.log("NODES: ", parent.childNodes);
+  </script>
+</html>
+
+
+
+<!-- Additional Notes:
+
+The code selects elements from the HTML document using JavaScript and performs various operations on them.
+
+querySelector and querySelectorAll are used to select elements based on CSS selectors.
+
+parent.children returns a collection of the child elements of the parent element.
+
+parent.children[i] accesses individual child elements by index.
+
+DOM manipulation methods like style and innerHTML are used to change the appearance and content of elements dynamically.
+
+Properties like parentElement, firstElementChild, and lastElementChild provide access to the parent and child elements of a selected element.
+
+childNodes returns a collection of all child nodes of the parent element, including text nodes and comment nodes. -->
