@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DOM</title>
+    <style>
+      .bg-black {
+        background-color: #212121;
+        color: white;
+      }
+    </style>
+  </head>
+  <body class="bg-black">
+    <div>
+      <h1 id="title" class="heading">
+        Learning DOM <span style="display: none">Test Text</span>
+      </h1>
+      <h2>HElLO There</h2>
+      <h2>Lorem ipsum dolor sit.</h2>
+      <h2>Lorem ipsum dolor sit amet.</h2>
+      <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo,
+        iste.
+      </p>
+      <input type="password" name="" id="" />
+      <ul>
+        <li class="list-item">one</li>
+        <li class="list-item">two</li>
+        <li class="list-item">three</li>
+        <li class="list-item">three</li>
+      </ul>
+    </div>
+  </body>
+</html>
+
+<!-- 
+HTML Structure:
+The HTML document defines a basic structure containing various elements like headings, paragraphs, an input field, and an unordered list.
+
+Element Selection:
+Elements can be selected using various methods such as by tag name, class name, or ID.
+For example, the <h1> element with the ID "title" can be selected using document.getElementById("title").
+
+DOM Manipulation:
+Once an element is selected, its properties and contents can be manipulated using JavaScript.
+For instance, you can change the text content of an element using element.textContent = "New Text".
+
+CSS Classes:
+CSS classes can be applied to elements to style them uniformly.
+In the provided code, the .bg-black class is applied to the body element, giving it a black background and white text color.
+
+Event Handling:
+JavaScript can be used to attach event listeners to elements, enabling interaction with the webpage.
+For example, you can add a click event listener to a button element to perform an action when it's clicked.
+
+Element Hierarchy:
+The DOM represents the structure of HTML elements in a hierarchical manner.
+Parents, children, and siblings of elements can be accessed and manipulated using JavaScript.
+
+Visibility:
+Elements can be hidden or shown using CSS properties like display or visibility.
+In the provided code, a <span> element with style="display: none;" is initially hidden from view.
+
+Forms and Input Fields:
+HTML forms and input fields allow user input and interaction.
+In the provided code, an input field of type "password" is included.
+
+Lists:
+Lists in HTML are represented by <ul> (unordered list) and <li> (list item) elements.
+Each <li> element inside a <ul> represents an item in the list.
+ -->
