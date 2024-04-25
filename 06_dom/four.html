@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff">
+    <ul class="language">
+      <li>Javascript</li>
+    </ul>
+  </body>
+  <script>
+    // Function to add a new language to the list
+    function addLanguage(langName) {
+      // Creating a new list item element
+      const li = document.createElement("li");
+      // Setting the text content of the list item
+      li.innerText = `${langName}`;
+      // Appending the list item to the language list
+      document.querySelector('.language').appendChild(li)
+    }
+    // Adding new languages to the list using the function
+    addLanguage('python')
+    addLanguage('typescript')
+
+    // Optimized function to add a new language
+    function addOptiLanguage (langName) {
+        // Creating a new list item element with text content
+        const li = document.createElement('li')
+        li.appendChild(document.createTextNode(langName))
+        // Appending the list item to the language list
+        document.querySelector('.language').appendChild(li)
+    }
+    // Adding a new language using the optimized function
+    addOptiLanguage('golang')
+
+    // Edit
+
+    // Selecting the second list item
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // Replacing the content of the second list item with "Mojo"
+    const newLi = document.createElement('li')
+    newLi.textContent = "Mojo"
+    secondLang.replaceWith(newLi)
+    
+    // Selecting the first list item
+    const firstLang = document.querySelector("li")
+    // Replacing the entire first list item with "Typescript"
+    firstLang.outerHTML = "<li>Typescript</li>"
+
+    // Remove 
+
+    // Selecting and removing the last list item
+    const lastLang = document.querySelector("li:last-child")
+    lastLang.remove()
+  </script>
+</html>
+
+
+<!-- Additional Notes:
+
+The code demonstrates adding, editing, and removing elements from the HTML DOM dynamically using JavaScript.
+
+Functions are defined to add new languages to the list, with an optimized version for efficiency.
+
+Editing operations include replacing the content of specific list items and replacing the entire list item with new content.
+
+Removing operations involve selecting and removing specific list items from the DOM. -->
