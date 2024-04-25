@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM</title>
+  </head>
+  <body style="background-color: #212121; color: #fff"></body>
+  <script>
+    // Creating a new div element.
+    const div = document.createElement("div");
+
+    // Logging the newly created div element to the console.
+    console.log(div);
+
+    // Adding a class name to the div element.
+    div.className = "main";
+
+    // Generating a random ID and setting it as the ID attribute of the div element.
+    div.id = Math.round(Math.random() * 100 + 1);
+
+    // Setting a title attribute for the div element.
+    div.setAttribute("title", "generated title");
+
+    // Setting background color for the div element.
+    div.style.backgroundColor = "green";
+
+    // Adding padding to the div element.
+    div.style.padding = "10px";
+
+    // Setting inner text content for the div element.
+    div.innerText = "Chai aur Code";
+
+    // Creating a text node with the content "Chai aur code".
+    const addText = document.createTextNode("Chai aur code");
+
+    // Appending the text node to the div element.
+    div.appendChild(addText);
+
+    // Appending the div element to the body of the HTML document.
+    document.body.appendChild(div);
+  </script>
+</html>
+
+
+<!-- Additional Notes:
+
+The code dynamically creates a div element using JavaScript.
+
+Various attributes like className, id, and title are set for the div element.
+
+Inline styles such as background color and padding are applied to the div element.
+
+Text content is added to the div element using both innerText property and createTextNode method.
+
+Finally, the div element is appended to the body of the HTML document. -->
